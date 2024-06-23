@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import ToggleMode from './ToggleMode';
 
 const MainNav = () => {
     return (
@@ -10,8 +11,9 @@ const MainNav = () => {
                 <Link href="/users">Users</Link>
             </div>
             <div className='flex items-center gap-2'>
+                <Link href="/">Sign in</Link>
                 <Link href="/">Login</Link>
-                <Link href="/">Dark</Link>
+                <ToggleMode />
             </div>
         </div>
     );
